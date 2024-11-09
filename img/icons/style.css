@@ -1,0 +1,52 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-star {
+  width: 0.9285714285714285em;
+}
+
+.icon-bookmark {
+  width: 0.7142857142857142em;
+}
+
+.icon-plane {
+  width: 0.803em;
+}
+
+.icon-globe {
+  width: 0.8571428571428571em;
+}
+
+.icon-coffee {
+  width: 1.0357142857142856em;
+}
+
+.icon-angle-right {
+  width: 0.33928571428571425em;
+}
+
+.icon-paw {
+  width: 0.9285714285714285em;
+}
+
+.icon-snowflake-o {
+  width: 0.9285714285714285em;
+}
+
+.icon-connection {
+  width: 1.25em;
+}

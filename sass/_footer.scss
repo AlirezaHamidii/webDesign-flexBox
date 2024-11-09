@@ -1,0 +1,25 @@
+.footer {
+    background-color: #1b1b1b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    .alireza_logo {
+        height: 5rem;
+        margin: 2rem;
+    }
+
+    .legal {
+        color: $Grey-light-4;
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        padding: 2rem;
+        width: 60%;
+
+    }
+}

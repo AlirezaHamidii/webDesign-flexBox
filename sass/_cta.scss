@@ -1,0 +1,79 @@
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    @media only screen and (max-width: $bp--large) {
+        padding: 2.5rem 0;
+        margin-bottom: 3rem;
+    }
+
+    &__book-now {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.btn {
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    background-image: linear-gradient(to right, $Primary-light , $Primary-dark );
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+
+    overflow: hidden;
+
+    &>* {
+        height: 100%;
+        width: 100%;
+        transition: all 0.2s;
+        display: inline-block;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        padding: 2rem 0rem;
+        left: 0;
+        top: -100%;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to right, $Primary-dark , $Primary-light );
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+
+    &:focus {
+        animation: pulsate 1s infinite;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.05;
+        box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.774);
+    }
+
+    100% {
+        scale: 1;
+    }
+}

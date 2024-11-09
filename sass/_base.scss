@@ -1,0 +1,75 @@
+$Primary-color: #134047;
+$Primary-light: #1c616b;
+$Primary-dark: #0c1c1f;
+
+// :root{
+//     --Primary-color: #134047;
+//     --Primary-light: #1c616b;
+//     --Primary-dark: #0c1c1f;
+// }
+
+$Grey-light-1: #faf9f9;
+$Grey-light-2: #f4f2f2;
+$Grey-light-3: #f0eeee;
+$Grey-light-4: #ccc;
+
+$Grey-dark-1: #333;
+$Grey-dark-2: #777;
+$Grey-dark-3: #999;
+
+$Shadow-dark : rgba(0, 0, 0, 0.548);
+$Notification-color : rgb(204, 3, 3);
+$Notification-color-hover : rgb(255, 0, 0);
+
+
+// ////////   MEDIA QUERY
+$bp--largest : 75em; // 1200 / 16 = 75em
+$bp--large : 68.75em; // 1100 / 16 = 68.75em
+$bp--medium : 56.25em; // 900 / 16 = 56.25em
+$bp--small : 37.5em; //  600 / 16 = 37.5em
+$bp--smallest : 31.25em; // 500 / 16 = 31.25em 
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp--large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-weight: 300;
+    font-family: cursive;
+    color: $Grey-dark-2;
+    background-image: linear-gradient(to right bottom, $Primary-dark , $Primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: $Grey-light-2;
+    box-shadow: 0 4rem 3rem $Shadow-dark ;
+    min-height: 50rem;
+
+    @media only screen and (max-width: $bp--largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
